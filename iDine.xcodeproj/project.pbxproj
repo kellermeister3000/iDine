@@ -16,6 +16,7 @@
 		8463D3A6299DFBA200ECA0C1 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463D3A3299DFBA200ECA0C1 /* Menu.swift */; };
 		8463D3A7299DFBA200ECA0C1 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 8463D3A4299DFBA200ECA0C1 /* menu.json */; };
 		8463D3A9299E006D00ECA0C1 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463D3A8299E006D00ECA0C1 /* ItemRow.swift */; };
+		8463D3AB299E08A400ECA0C1 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463D3AA299E08A400ECA0C1 /* ItemDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		8463D3A3299DFBA200ECA0C1 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		8463D3A4299DFBA200ECA0C1 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		8463D3A8299E006D00ECA0C1 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		8463D3AA299E08A400ECA0C1 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				8463D392299DFB6F00ECA0C1 /* iDineApp.swift */,
 				8463D394299DFB6F00ECA0C1 /* ContentView.swift */,
+				8463D3AA299E08A400ECA0C1 /* ItemDetail.swift */,
 				8463D3A8299E006D00ECA0C1 /* ItemRow.swift */,
 				8463D3A0299DFB9200ECA0C1 /* Helper.swift */,
 				8463D3A3299DFBA200ECA0C1 /* Menu.swift */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8463D3AB299E08A400ECA0C1 /* ItemDetail.swift in Sources */,
 				8463D395299DFB6F00ECA0C1 /* ContentView.swift in Sources */,
 				8463D393299DFB6F00ECA0C1 /* iDineApp.swift in Sources */,
 				8463D3A5299DFBA200ECA0C1 /* Order.swift in Sources */,
