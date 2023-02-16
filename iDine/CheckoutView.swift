@@ -19,6 +19,14 @@ struct CheckoutView: View {
     let tipAmounts = [10, 15, 20, 25, 0]
     @State private var tipAmount = 15
     
+    @State private var showingPaymentAlert = false
+    
+    var totalPrice: String {
+        let total = Double(order.total)
+        let tipValue = total / 100 * Double(tipAmount)
+        return (total + tipValue).formatted(.currency(code: "USD"))
+    }
+    
     var body: some View {
         Form {
             Section("Select payment method") {
@@ -44,14 +52,19 @@ struct CheckoutView: View {
                 .pickerStyle(.segmented)
             }
             
-            Section("Total: $100") {
+            Section("Total: \(totalPrice)") {
                 Button("Confirm Order") {
-                    // place the order
+                    showingPaymentAlert.toggle()
                 }
             }
         }
         .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
+        .alert("Order Confirmed", isPresented: $showingPaymentAlert) {
+            // add buttons here
+        } message: {
+            Text("Your total was \(totalPrice) - thank you!")
+        }
     }
 }
 
